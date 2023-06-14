@@ -1,12 +1,12 @@
 #!/bin/sh
 echo "Zum Einfügen bei Putty als Client .... Bei Cygwin: Shift + Einfg"
-echo "Bitte den FTP Seitennamen eingeben, wie in /webmaster vermerkt, e.g. verband2.helios-media.com"
+echo "Bitte den Seitennamen eingeben"
 read ftpsitename
-echo "Bitte die IP eingeben, wie in /webmaster vermerkt, e.g. 78.46.125.31 oder carlos"
+echo "Bitte die IP oder domain eingeben"
 read ip
-echo "Bitte den Benutzer eingeben, e.g. repadmin"
+echo "Bitte den Benutzer eingeben"
 read user
-echo "Bitte den SSH Port eingeben bei Hetzner 222, allgemeiner Standardport 22"
+echo "Bitte den SSH Port eingeben, allgemeiner Standardport 22"
 read port
 cd $HOME/.ssh/
 ssh-keygen -N '' -f "$ftpsitename"
